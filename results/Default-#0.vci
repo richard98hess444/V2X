@@ -1,0 +1,117 @@
+file 20297 1579698881                                           
+version 2
+run Default-0-20200122-14:14:14-16792
+attr configname Default
+attr datetime 20200122-14:14:14
+attr experiment Default
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network SimplePlatoonScenario
+attr processid 16792
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.playgroundSizeX 2500m
+param *.playgroundSizeY 2500m
+param *.playgroundSizeZ 50m
+param *.annotations.draw true
+param *.obstacles.obstacles "xmldoc(\"config.xml\", \"//AnalogueModel[@type='SimpleObstacleShadowing']/obstacles\")"
+param *.manager.updateInterval 1s
+param *.manager.host "\"localhost\""
+param *.manager.port 9999
+param *.manager.autoShutdown true
+param *.manager.launchConfig "xmldoc(\"straight.launchd.xml\")"
+param *.rsu[0].mobility.x 50
+param *.rsu[0].mobility.y 50
+param *.rsu[0].mobility.z 3
+param *.rsu[*].applType "\"MyRSU\""
+param *.rsu[*].appl.headerLength "80 bit"
+param *.rsu[*].appl.sendBeacons false
+param *.rsu[*].appl.dataOnSch false
+param *.rsu[*].appl.beaconInterval 10s
+param *.rsu[*].appl.beaconUserPriority 7
+param *.rsu[*].appl.dataUserPriority 5
+param *.rsu[*].nic.phy80211p.antennaOffsetZ "0 m"
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 2600m
+param *.connectionManager.drawMaxIntfDist false
+param *.**.nic.mac1609_4.useServiceChannel true
+param *.**.nic.mac1609_4.txPower 20mW
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.phy80211p.minPowerLevel -110dBm
+param *.**.nic.phy80211p.useNoiseFloor true
+param *.**.nic.phy80211p.noiseFloor -98dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+param *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+param *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+param *.node[*].applType "\"SimplePlatoon\""
+param *.node[*].appl.headerLength "80 bit"
+param *.node[*].appl.sendBeacons false
+param *.node[*].appl.dataOnSch false
+param *.node[*].appl.beaconInterval 1s
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 0
+param *.node[*].veinsmobility.setHostSpeed false
+param *.node[*0].veinsmobility.accidentCount 0
+param *.node[*0].veinsmobility.accidentStart 73s
+param *.node[*0].veinsmobility.accidentDuration 50s
+
+vector 0 SimplePlatoonScenario.node[0].veinsmobility posx ETV
+vector 1 SimplePlatoonScenario.node[0].veinsmobility posy ETV
+vector 2 SimplePlatoonScenario.node[1].veinsmobility posx ETV
+vector 3 SimplePlatoonScenario.node[1].veinsmobility posy ETV
+vector 4 SimplePlatoonScenario.node[0].veinsmobility speed ETV
+vector 5 SimplePlatoonScenario.node[2].veinsmobility posx ETV
+vector 6 SimplePlatoonScenario.node[2].veinsmobility posy ETV
+vector 7 SimplePlatoonScenario.node[0].veinsmobility acceleration ETV
+vector 8 SimplePlatoonScenario.node[0].veinsmobility co2emission ETV
+vector 9 SimplePlatoonScenario.node[1].veinsmobility speed ETV
+vector 10 SimplePlatoonScenario.node[3].veinsmobility posx ETV
+vector 11 SimplePlatoonScenario.node[3].veinsmobility posy ETV
+vector 12 SimplePlatoonScenario.node[1].veinsmobility acceleration ETV
+vector 13 SimplePlatoonScenario.node[1].veinsmobility co2emission ETV
+vector 14 SimplePlatoonScenario.node[2].veinsmobility speed ETV
+vector 15 SimplePlatoonScenario.node[4].veinsmobility posx ETV
+vector 16 SimplePlatoonScenario.node[4].veinsmobility posy ETV
+vector 17 SimplePlatoonScenario.node[2].veinsmobility acceleration ETV
+vector 18 SimplePlatoonScenario.node[2].veinsmobility co2emission ETV
+vector 19 SimplePlatoonScenario.node[3].veinsmobility speed ETV
+vector 20 SimplePlatoonScenario.node[3].veinsmobility acceleration ETV
+vector 21 SimplePlatoonScenario.node[3].veinsmobility co2emission ETV
+vector 22 SimplePlatoonScenario.node[4].veinsmobility speed ETV
+vector 23 SimplePlatoonScenario.node[4].veinsmobility acceleration ETV
+vector 24 SimplePlatoonScenario.node[4].veinsmobility co2emission ETV
+8	4210 869 471 52483 3 36 34 4.48862117376 4.48862117376 152.61311990784 685.0224814119
+7	5079 461 471 52483 3 36 34 0 0 0 0
+4	5540 507 112 52483 2 36 35 28 28 980 27440
+1	6047 625 2 52483 1 36 36 26.65 26.65 959.4 25568.01
+0	6672 621 2 52483 1 36 36 30.1 982.1 17743.6 11764588.36
+13	7293 906 1136 54107 4 37 34 4.48862117376 4.48862117376 152.61311990784 685.0224814119
+12	8199 498 1136 54107 4 37 34 0 0 0 0
+9	8697 510 471 54107 3 37 35 28 28 980 27440
+3	9207 630 112 54107 2 37 36 26.65 26.65 959.4 25568.01
+2	9837 626 112 54107 2 37 36 30.1 982.1 17743.6 11764588.36
+18	10463 908 2173 55255 5 38 34 4.48862117376 4.48862117376 152.61311990784 685.0224814119
+17	11371 500 2173 55255 5 38 34 0 0 0 0
+14	11871 548 1136 55255 4 38 35 28 28 980 27440
+6	12419 633 471 55255 3 38 36 26.65 26.65 959.4 25568.01
+5	13052 629 471 55255 3 38 36 30.1 982.1 17743.6 11764588.36
+21	13681 910 3763 55947 6 39 34 4.48862117376 4.48862117376 152.61311990784 685.0224814119
+20	14591 502 3763 55947 6 39 34 0 0 0 0
+19	15093 550 2173 55947 5 39 35 28 28 980 27440
+11	15643 672 1136 55947 4 39 36 26.65 26.65 959.4 25568.01
+10	16315 668 1136 55947 4 39 36 30.1 982.1 17743.6 11764588.36
+24	16983 912 5387 56268 7 40 34 4.48862117376 4.48862117376 152.61311990784 685.0224814119
+23	17895 504 5387 56268 7 40 34 0 0 0 0
+22	18399 552 3763 56268 6 40 35 28 28 980 27440
+16	18951 674 2173 56268 5 40 36 26.65 26.65 959.4 25568.01
+15	19625 670 2173 56268 5 40 36 30.1 982.1 17743.6 11764588.36
+

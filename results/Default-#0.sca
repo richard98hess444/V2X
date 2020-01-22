@@ -1,0 +1,202 @@
+version 2
+run Default-0-20200122-14:14:14-16792
+attr configname Default
+attr datetime 20200122-14:14:14
+attr experiment Default
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network SimplePlatoonScenario
+attr processid 16792
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.playgroundSizeX 2500m
+param *.playgroundSizeY 2500m
+param *.playgroundSizeZ 50m
+param *.annotations.draw true
+param *.obstacles.obstacles "xmldoc(\"config.xml\", \"//AnalogueModel[@type='SimpleObstacleShadowing']/obstacles\")"
+param *.manager.updateInterval 1s
+param *.manager.host "\"localhost\""
+param *.manager.port 9999
+param *.manager.autoShutdown true
+param *.manager.launchConfig "xmldoc(\"straight.launchd.xml\")"
+param *.rsu[0].mobility.x 50
+param *.rsu[0].mobility.y 50
+param *.rsu[0].mobility.z 3
+param *.rsu[*].applType "\"MyRSU\""
+param *.rsu[*].appl.headerLength "80 bit"
+param *.rsu[*].appl.sendBeacons false
+param *.rsu[*].appl.dataOnSch false
+param *.rsu[*].appl.beaconInterval 10s
+param *.rsu[*].appl.beaconUserPriority 7
+param *.rsu[*].appl.dataUserPriority 5
+param *.rsu[*].nic.phy80211p.antennaOffsetZ "0 m"
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 2600m
+param *.connectionManager.drawMaxIntfDist false
+param *.**.nic.mac1609_4.useServiceChannel true
+param *.**.nic.mac1609_4.txPower 20mW
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.phy80211p.minPowerLevel -110dBm
+param *.**.nic.phy80211p.useNoiseFloor true
+param *.**.nic.phy80211p.noiseFloor -98dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+param *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+param *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+param *.node[*].applType "\"SimplePlatoon\""
+param *.node[*].appl.headerLength "80 bit"
+param *.node[*].appl.sendBeacons false
+param *.node[*].appl.dataOnSch false
+param *.node[*].appl.beaconInterval 1s
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 0
+param *.node[*].veinsmobility.setHostSpeed false
+param *.node[*0].veinsmobility.accidentCount 0
+param *.node[*0].veinsmobility.accidentStart 73s
+param *.node[*0].veinsmobility.accidentDuration 50s
+
+scalar SimplePlatoonScenario.node[0].appl generatedWSMs 359
+scalar SimplePlatoonScenario.node[0].appl receivedWSMs 668
+scalar SimplePlatoonScenario.node[0].appl generatedBSMs 0
+scalar SimplePlatoonScenario.node[0].appl receivedBSMs 0
+scalar SimplePlatoonScenario.node[0].appl generatedWSAs 0
+scalar SimplePlatoonScenario.node[0].appl receivedWSAs 35
+scalar SimplePlatoonScenario.node[0].nic.phy80211p busyTime 0.00095288888888888
+scalar SimplePlatoonScenario.node[0].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar SimplePlatoonScenario.node[0].nic.mac1609_4 ReceivedBroadcasts 703
+scalar SimplePlatoonScenario.node[0].nic.mac1609_4 SentPackets 359
+scalar SimplePlatoonScenario.node[0].nic.mac1609_4 SentAcknowledgements 0
+scalar SimplePlatoonScenario.node[0].nic.mac1609_4 SNIRLostPackets 0
+scalar SimplePlatoonScenario.node[0].nic.mac1609_4 RXTXLostPackets 668
+scalar SimplePlatoonScenario.node[0].nic.mac1609_4 TotalLostPackets 668
+scalar SimplePlatoonScenario.node[0].nic.mac1609_4 DroppedPacketsInMac 0
+scalar SimplePlatoonScenario.node[0].nic.mac1609_4 TooLittleTime 0
+scalar SimplePlatoonScenario.node[0].nic.mac1609_4 TimesIntoBackoff 359
+scalar SimplePlatoonScenario.node[0].nic.mac1609_4 SlotsBackoff 537
+scalar SimplePlatoonScenario.node[0].nic.mac1609_4 NumInternalContention 0
+scalar SimplePlatoonScenario.node[0].nic.mac1609_4 totalBusyTime 0.051895
+scalar SimplePlatoonScenario.node[0].veinsmobility startTime 1
+scalar SimplePlatoonScenario.node[0].veinsmobility totalTime 35
+scalar SimplePlatoonScenario.node[0].veinsmobility stopTime 37
+scalar SimplePlatoonScenario.node[0].veinsmobility minSpeed 28
+scalar SimplePlatoonScenario.node[0].veinsmobility maxSpeed 28
+scalar SimplePlatoonScenario.node[0].veinsmobility totalDistance 980
+scalar SimplePlatoonScenario.node[0].veinsmobility totalCO2Emission 152.61311990784
+scalar SimplePlatoonScenario.node[1].appl generatedWSMs 359
+scalar SimplePlatoonScenario.node[1].appl receivedWSMs 371
+scalar SimplePlatoonScenario.node[1].appl generatedBSMs 0
+scalar SimplePlatoonScenario.node[1].appl receivedBSMs 0
+scalar SimplePlatoonScenario.node[1].appl generatedWSAs 36
+scalar SimplePlatoonScenario.node[1].appl receivedWSAs 0
+scalar SimplePlatoonScenario.node[1].nic.phy80211p busyTime 0.00178
+scalar SimplePlatoonScenario.node[1].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar SimplePlatoonScenario.node[1].nic.mac1609_4 ReceivedBroadcasts 371
+scalar SimplePlatoonScenario.node[1].nic.mac1609_4 SentPackets 395
+scalar SimplePlatoonScenario.node[1].nic.mac1609_4 SentAcknowledgements 0
+scalar SimplePlatoonScenario.node[1].nic.mac1609_4 SNIRLostPackets 964
+scalar SimplePlatoonScenario.node[1].nic.mac1609_4 RXTXLostPackets 32
+scalar SimplePlatoonScenario.node[1].nic.mac1609_4 TotalLostPackets 996
+scalar SimplePlatoonScenario.node[1].nic.mac1609_4 DroppedPacketsInMac 0
+scalar SimplePlatoonScenario.node[1].nic.mac1609_4 TooLittleTime 0
+scalar SimplePlatoonScenario.node[1].nic.mac1609_4 TimesIntoBackoff 395
+scalar SimplePlatoonScenario.node[1].nic.mac1609_4 SlotsBackoff 618
+scalar SimplePlatoonScenario.node[1].nic.mac1609_4 NumInternalContention 0
+scalar SimplePlatoonScenario.node[1].nic.mac1609_4 totalBusyTime 0.053005054756
+scalar SimplePlatoonScenario.node[1].veinsmobility startTime 2
+scalar SimplePlatoonScenario.node[1].veinsmobility totalTime 35
+scalar SimplePlatoonScenario.node[1].veinsmobility stopTime 38
+scalar SimplePlatoonScenario.node[1].veinsmobility minSpeed 28
+scalar SimplePlatoonScenario.node[1].veinsmobility maxSpeed 28
+scalar SimplePlatoonScenario.node[1].veinsmobility totalDistance 980
+scalar SimplePlatoonScenario.node[1].veinsmobility totalCO2Emission 152.61311990784
+scalar SimplePlatoonScenario.node[2].appl generatedWSMs 359
+scalar SimplePlatoonScenario.node[2].appl receivedWSMs 683
+scalar SimplePlatoonScenario.node[2].appl generatedBSMs 0
+scalar SimplePlatoonScenario.node[2].appl receivedBSMs 0
+scalar SimplePlatoonScenario.node[2].appl generatedWSAs 0
+scalar SimplePlatoonScenario.node[2].appl receivedWSAs 35
+scalar SimplePlatoonScenario.node[2].nic.phy80211p busyTime 0.0010302222222222
+scalar SimplePlatoonScenario.node[2].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar SimplePlatoonScenario.node[2].nic.mac1609_4 ReceivedBroadcasts 718
+scalar SimplePlatoonScenario.node[2].nic.mac1609_4 SentPackets 359
+scalar SimplePlatoonScenario.node[2].nic.mac1609_4 SentAcknowledgements 0
+scalar SimplePlatoonScenario.node[2].nic.mac1609_4 SNIRLostPackets 43
+scalar SimplePlatoonScenario.node[2].nic.mac1609_4 RXTXLostPackets 652
+scalar SimplePlatoonScenario.node[2].nic.mac1609_4 TotalLostPackets 695
+scalar SimplePlatoonScenario.node[2].nic.mac1609_4 DroppedPacketsInMac 0
+scalar SimplePlatoonScenario.node[2].nic.mac1609_4 TooLittleTime 0
+scalar SimplePlatoonScenario.node[2].nic.mac1609_4 TimesIntoBackoff 359
+scalar SimplePlatoonScenario.node[2].nic.mac1609_4 SlotsBackoff 540
+scalar SimplePlatoonScenario.node[2].nic.mac1609_4 NumInternalContention 0
+scalar SimplePlatoonScenario.node[2].nic.mac1609_4 totalBusyTime 0.053202401128
+scalar SimplePlatoonScenario.node[2].veinsmobility startTime 3
+scalar SimplePlatoonScenario.node[2].veinsmobility totalTime 35
+scalar SimplePlatoonScenario.node[2].veinsmobility stopTime 39
+scalar SimplePlatoonScenario.node[2].veinsmobility minSpeed 28
+scalar SimplePlatoonScenario.node[2].veinsmobility maxSpeed 28
+scalar SimplePlatoonScenario.node[2].veinsmobility totalDistance 980
+scalar SimplePlatoonScenario.node[2].veinsmobility totalCO2Emission 152.61311990784
+scalar SimplePlatoonScenario.node[3].appl generatedWSMs 359
+scalar SimplePlatoonScenario.node[3].appl receivedWSMs 683
+scalar SimplePlatoonScenario.node[3].appl generatedBSMs 0
+scalar SimplePlatoonScenario.node[3].appl receivedBSMs 0
+scalar SimplePlatoonScenario.node[3].appl generatedWSAs 0
+scalar SimplePlatoonScenario.node[3].appl receivedWSAs 34
+scalar SimplePlatoonScenario.node[3].nic.phy80211p busyTime 0.00097377777777777
+scalar SimplePlatoonScenario.node[3].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar SimplePlatoonScenario.node[3].nic.mac1609_4 ReceivedBroadcasts 717
+scalar SimplePlatoonScenario.node[3].nic.mac1609_4 SentPackets 359
+scalar SimplePlatoonScenario.node[3].nic.mac1609_4 SentAcknowledgements 0
+scalar SimplePlatoonScenario.node[3].nic.mac1609_4 SNIRLostPackets 2
+scalar SimplePlatoonScenario.node[3].nic.mac1609_4 RXTXLostPackets 684
+scalar SimplePlatoonScenario.node[3].nic.mac1609_4 TotalLostPackets 686
+scalar SimplePlatoonScenario.node[3].nic.mac1609_4 DroppedPacketsInMac 0
+scalar SimplePlatoonScenario.node[3].nic.mac1609_4 TooLittleTime 0
+scalar SimplePlatoonScenario.node[3].nic.mac1609_4 TimesIntoBackoff 359
+scalar SimplePlatoonScenario.node[3].nic.mac1609_4 SlotsBackoff 535
+scalar SimplePlatoonScenario.node[3].nic.mac1609_4 NumInternalContention 0
+scalar SimplePlatoonScenario.node[3].nic.mac1609_4 totalBusyTime 0.052599
+scalar SimplePlatoonScenario.node[3].veinsmobility startTime 4
+scalar SimplePlatoonScenario.node[3].veinsmobility totalTime 35
+scalar SimplePlatoonScenario.node[3].veinsmobility stopTime 40
+scalar SimplePlatoonScenario.node[3].veinsmobility minSpeed 28
+scalar SimplePlatoonScenario.node[3].veinsmobility maxSpeed 28
+scalar SimplePlatoonScenario.node[3].veinsmobility totalDistance 980
+scalar SimplePlatoonScenario.node[3].veinsmobility totalCO2Emission 152.61311990784
+scalar SimplePlatoonScenario.node[4].appl generatedWSMs 359
+scalar SimplePlatoonScenario.node[4].appl receivedWSMs 346
+scalar SimplePlatoonScenario.node[4].appl generatedBSMs 0
+scalar SimplePlatoonScenario.node[4].appl receivedBSMs 0
+scalar SimplePlatoonScenario.node[4].appl generatedWSAs 0
+scalar SimplePlatoonScenario.node[4].appl receivedWSAs 33
+scalar SimplePlatoonScenario.node[4].nic.phy80211p busyTime 0.001824
+scalar SimplePlatoonScenario.node[4].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar SimplePlatoonScenario.node[4].nic.mac1609_4 ReceivedBroadcasts 379
+scalar SimplePlatoonScenario.node[4].nic.mac1609_4 SentPackets 359
+scalar SimplePlatoonScenario.node[4].nic.mac1609_4 SentAcknowledgements 0
+scalar SimplePlatoonScenario.node[4].nic.mac1609_4 SNIRLostPackets 978
+scalar SimplePlatoonScenario.node[4].nic.mac1609_4 RXTXLostPackets 16
+scalar SimplePlatoonScenario.node[4].nic.mac1609_4 TotalLostPackets 994
+scalar SimplePlatoonScenario.node[4].nic.mac1609_4 DroppedPacketsInMac 0
+scalar SimplePlatoonScenario.node[4].nic.mac1609_4 TooLittleTime 672
+scalar SimplePlatoonScenario.node[4].nic.mac1609_4 TimesIntoBackoff 695
+scalar SimplePlatoonScenario.node[4].nic.mac1609_4 SlotsBackoff 516
+scalar SimplePlatoonScenario.node[4].nic.mac1609_4 NumInternalContention 0
+scalar SimplePlatoonScenario.node[4].nic.mac1609_4 totalBusyTime 0.056095121936
+scalar SimplePlatoonScenario.node[4].veinsmobility startTime 5
+scalar SimplePlatoonScenario.node[4].veinsmobility totalTime 35
+scalar SimplePlatoonScenario.node[4].veinsmobility stopTime 41
+scalar SimplePlatoonScenario.node[4].veinsmobility minSpeed 28
+scalar SimplePlatoonScenario.node[4].veinsmobility maxSpeed 28
+scalar SimplePlatoonScenario.node[4].veinsmobility totalDistance 980
+scalar SimplePlatoonScenario.node[4].veinsmobility totalCO2Emission 152.61311990784
+scalar SimplePlatoonScenario.manager roiArea 0
+
